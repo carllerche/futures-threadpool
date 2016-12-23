@@ -1,0 +1,23 @@
+[package]
+name = "futures-threadpool"
+version = "0.1.0"
+authors = ["Carl Lerche <me@carllerche.com>"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+keywords = ["futures", "threadpool"]
+repository = "https://github.com/carllerche/futures-threadpool"
+homepage = "https://github.com/carllerche/futures-threadpool"
+documentation = "https://docs.rs/futures-threadpool"
+description = """
+An implementation of thread pools using futures
+"""
+
+[dependencies]
+futures = "0.1"
+num_cpus = "1.0"
+crossbeam = "0.2"
+
+[dependencies.futures-spawn]
+version = "0.1"
+default-features = false
+features = ["use_std"]
